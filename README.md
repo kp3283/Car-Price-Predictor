@@ -28,7 +28,7 @@
 ### Developing Model:
 -> For training and testing of data I have use train_test_split of sklearn library.
 
--> RandomForestRegressor algorithm is used to develope the base model. I have used RandomForestRegressor instead of ExtraTreeRegressor because with ExtraTreeRegressor ( it si faster than RandomForestRegressor) if the data is redundant or repeated frequently the variance will increase and this will decrease the efficiency of the model.
+-> RandomForestRegressor algorithm is used to develope the base model. I have used RandomForestRegressor instead of ExtraTreeRegressor because with ExtraTreeRegressor ( it is faster than RandomForestRegressor) but if the data is redundant or repeated frequently the variance will increase and this will decrease the efficiency of the model.
 
 -> I have used RandomizedsearchCV to find the best solution for the built model. The reason of selecting RandomizedSearchCV instead of GridsearchCV because it will randomly select the parameter combinations and for Grindsearchcv we need to specify the parameter combinations. This has increased the the model generalizability.
 
